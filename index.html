@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push, Pop and Join</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <h2>join(), pop() and push()<h2>
+
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            // Display the original array
+            document.getElementById("result1").innerHTML = "Original array: " + fruits;
+
+            // Display the array joined with " * "
+            document.getElementById("result2").innerHTML = "Array with join(): " + fruits.join(" * ");
+
+            // Remove the last element using pop()
+            fruits.pop();
+            document.getElementById("result3").innerHTML = "Array after pop(): " + fruits;
+
+            // Add a new element to the end of the array using push()
+            fruits.push("Grapes");
+            document.getElementById("result4").innerHTML = "Array after push(): " + fruits;
+        </script>
+</body>
+</html>
